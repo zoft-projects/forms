@@ -1,0 +1,58 @@
+<div class="a">
+    <div class="container w-75 m-5">
+        <h3>{{ surveyForm.get('surveyTitle')?.value }}</h3>
+        <p>Fell free to answer the questions below based on your own experience and opinion</p>
+        <form action="" [formGroup]="surveyForm">
+            <div class="row">
+                <div class="col-lg-6" formGroupName="respondent">
+                    <h5>Employee Details</h5>
+                    <hr>
+                    <div>
+                        <label for="id">Employee Id</label>
+                        <input type="text" id="id" formControlName="employeeId">
+                        <div class="row" formGroupName="name">
+                            <div class="col-lg-6">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" formControlName="firstName">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" formControlName="lastName">        
+                            </div>
+                        </div>
+                        <label for="dept">Department</label>
+                        <input type="text" id="dept" formControlName="department">
+                       <div formGroupName="contact">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" formControlName="email" >
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" formControlName="phone">
+                       </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <!-- <div formArrayName="surveyResponses">
+                        <div *ngFor="let section of surveyResponses.controls; let i = index" [formGroupName]="i">
+                            <h5>{{ section.get('section')?.value }}</h5>
+                            <hr>
+                            <div formArrayName="questions">
+                                <div *ngFor="let question of getQuestions(section)?.controls; let j = index" [formGroupName]="j">
+                                    <label>{{ question.get('questionText')?.value }}</label>
+                                    
+                                    <input *ngIf="question.get('response.type')?.value === 'text'" formControlName="value" class="form-control" name="one" id="one"/>
+    
+                                    <input *ngIf="question.get('response.type')?.value === 'rating'" type="number" formControlName="value" class="form-control"  name="tow" id="two" />
+    
+                                    <input *ngIf="question.get('response.type')?.value === 'boolean'" type="checkbox" formControlName="value" class="form-check-input"  name="three" id="three" />
+    
+                                    <textarea *ngIf="question.get('response.type')?.value === 'list'" formControlName="value" class="form-control"  name="four" id="four"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>                
+            </div>
+        </form>
+    </div>
+</div>

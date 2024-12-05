@@ -1,0 +1,46 @@
+.c1{
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url('https://images.pexels.com/photos/1770808/pexels-photo-1770808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 710px;
+ 
+}
+.c2{
+    overflow: hidden;
+    background-color: rgba(203,255,92,255);
+    border-radius: 20px;
+    min-height: 710px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: left;
+    padding-inline: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.b{
+    display: flex;
+    justify-content: center;
+    button{
+        border: none;
+        color: white;
+        background-color: black;
+        border-radius: 15px;
+        padding: 5px;
+    
+    }
+
+}
+@media(max-width:768px){
+    .c2{
+        padding-inline: 20px;
+        padding: 10px;
+    }
+}

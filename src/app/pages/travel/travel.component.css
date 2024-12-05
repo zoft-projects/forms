@@ -1,0 +1,51 @@
+.a{
+    background-image: url('https://images.pexels.com/photos/10072847/pexels-photo-10072847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    min-height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+h1{
+    text-align: center;
+}
+.container{
+    background-color: rgb(31, 145, 132);
+    border-radius: 15px;
+    color: white;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 30px;
+    position: relative; 
+    z-index: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    h5{
+        color: rgb(239, 230, 230);
+    }
+    .b{
+        display: flex;
+        justify-content: center;
+        button{
+            padding: 7px;
+            padding-inline: 50px;
+            border-radius: 20px;
+            border: none;
+            background-color:  rgb(169, 135, 90);
+            color: white;
+            font-weight: 600;
+            transition: transform 0.2s ease-in-out;
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+
+    }
+}
